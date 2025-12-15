@@ -16,6 +16,7 @@ namespace WEB_API_Training.Services.Student
 
         public async Task CreateAsync(StudentModel student)
         {
+            student.Id = Guid.NewGuid();
             _db.Students.Add(student);
             await _db.SaveChangesAsync();
         }
