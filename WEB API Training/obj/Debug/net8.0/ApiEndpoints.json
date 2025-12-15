@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "student",
-        "Type": "WEB_API_Training.Models.StudentModel",
+        "Name": "model",
+        "Type": "WEB_API_Training.Models.StudentInfoModel",
         "IsRequired": true
       }
     ],

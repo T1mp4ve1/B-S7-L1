@@ -19,8 +19,15 @@ namespace WEB_API_Training.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(StudentModel student)
+        public async Task<IActionResult> Create(StudentInfoModel model)
         {
+            var student = new StudentModel
+            {
+                Id = Guid.NewGuid(),
+                Nome = model.Nome,
+                Cognome = model.Cognome,
+                Email = model.Email
+            };
             await _student.CreateAsync(student);
             return Ok();
         }

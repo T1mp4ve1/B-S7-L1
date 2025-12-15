@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/StudentModel"
+                "$ref": "#/components/schemas/StudentInfoModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/StudentModel"
+                "$ref": "#/components/schemas/StudentInfoModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/StudentModel"
+                "$ref": "#/components/schemas/StudentInfoModel"
               }
             }
           }
@@ -88,19 +88,14 @@
   },
   "components": {
     "schemas": {
-      "StudentModel": {
+      "StudentInfoModel": {
         "required": [
           "cognome",
           "email",
-          "id",
           "nome"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "nome": {
             "maxLength": 50,
             "minLength": 1,
