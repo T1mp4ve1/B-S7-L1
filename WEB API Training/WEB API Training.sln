@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36705.20 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB API Training", "WEB API Training.csproj", "{7887776A-9979-4433-B026-74EF876A5A40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB API Training", "WEB API Training.csproj", "{D21C62FC-FA21-412B-874D-A3725D7BC9E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7887776A-9979-4433-B026-74EF876A5A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7887776A-9979-4433-B026-74EF876A5A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7887776A-9979-4433-B026-74EF876A5A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7887776A-9979-4433-B026-74EF876A5A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21C62FC-FA21-412B-874D-A3725D7BC9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21C62FC-FA21-412B-874D-A3725D7BC9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21C62FC-FA21-412B-874D-A3725D7BC9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21C62FC-FA21-412B-874D-A3725D7BC9E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6AB8CC71-59A0-40EC-99E0-A6546CA65A1C}
+		SolutionGuid = {0216C1FB-A8C6-43D0-AB90-182F340B0FFC}
 	EndGlobalSection
 EndGlobal
