@@ -14,22 +14,41 @@ namespace WEB_API_Training.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
         {
-            var students = await _student.GetAllAsync();
-            return Ok(students);
+            try
+            {
+                var students = await _student.GetAllAsync();
+                return Ok(students);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Errore durante recupero dati (controller): {ex.Message}");
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(StudentInfoModel model)
         {
-            var student = new StudentModel
+            if (!ModelState.IsValid)
             {
-                Id = Guid.NewGuid(),
-                Nome = model.Nome,
-                Cognome = model.Cognome,
-                Email = model.Email
-            };
-            await _student.CreateAsync(student);
-            return Ok();
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var student = new StudentModel
+                {
+                    Id = Guid.NewGuid(),
+                    Nome = model.Nome,
+                    Cognome = model.Cognome,
+                    Email = model.Email
+                };
+                await _student.CreateAsync(student);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Errore durante creazione (controller): {ex.Message}");
+            }
         }
     }
 }
