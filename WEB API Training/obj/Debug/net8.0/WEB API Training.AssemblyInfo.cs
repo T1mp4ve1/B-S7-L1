@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEB API Training")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+744eaede3bcbfe799e981fdc61a5ca2173b73a85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f03656ea6569b97f6b0386da5ca7aec18d6464f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEB API Training")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEB API Training")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

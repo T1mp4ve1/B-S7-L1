@@ -11,8 +11,9 @@ namespace WEB_API_Training.Controllers
         private readonly IStudentService _student;
         public StudentsController(IStudentService student) { _student = student; }
 
+        //READ
         [HttpGet]
-        public async Task<IActionResult> GetAllStudents()
+        public async Task<IActionResult> GetAll()
         {
             try
             {
@@ -25,6 +26,7 @@ namespace WEB_API_Training.Controllers
             }
         }
 
+        //CREATE
         [HttpPost]
         public async Task<IActionResult> Create(StudentInfoModel model)
         {
@@ -35,19 +37,55 @@ namespace WEB_API_Training.Controllers
 
             try
             {
-                var student = new StudentModel
-                {
-                    Id = Guid.NewGuid(),
-                    Nome = model.Nome,
-                    Cognome = model.Cognome,
-                    Email = model.Email
-                };
-                await _student.CreateAsync(student);
+                await _student.CreateAsync(model);
                 return Ok();
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Errore durante creazione (controller): {ex.Message}");
+            }
+        }
+
+        //UPDATE
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(Guid id, StudentInfoModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                await _student.UpdateAsync(id, model);
+                return Ok();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Errore durante update (controller): {ex.Message}");
+            }
+        }
+
+        //DELETE
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            try
+            {
+                await _student.DeleteAsync(id);
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Errore durante cancellazione (controller): {ex.Message}");
             }
         }
     }

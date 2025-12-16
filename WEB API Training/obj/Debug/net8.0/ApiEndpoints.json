@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "WEB_API_Training.Controllers.StudentsController",
-    "Method": "GetAllStudents",
+    "Method": "GetAll",
     "RelativePath": "api/Students",
     "HttpMethod": "GET",
     "IsController": true,
@@ -20,6 +20,43 @@
       {
         "Name": "model",
         "Type": "WEB_API_Training.Models.StudentInfoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_Training.Controllers.StudentsController",
+    "Method": "Update",
+    "RelativePath": "api/Students/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "WEB_API_Training.Models.StudentInfoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_Training.Controllers.StudentsController",
+    "Method": "Delete",
+    "RelativePath": "api/Students/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

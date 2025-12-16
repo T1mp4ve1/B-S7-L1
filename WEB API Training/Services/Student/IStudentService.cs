@@ -5,6 +5,8 @@ namespace WEB_API_Training.Services.Student
     public interface IStudentService
     {
         Task<List<StudentModel>> GetAllAsync();
-        Task CreateAsync(StudentModel student);
+        Task CreateAsync(StudentInfoModel student);
+        Task UpdateAsync(Guid id, StudentInfoModel model);
+        Task DeleteAsync(Guid id);
     }
 }
