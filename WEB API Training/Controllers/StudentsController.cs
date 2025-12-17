@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WEB_API_Training.Models;
 using WEB_API_Training.Services.Student;
 
@@ -13,6 +14,7 @@ namespace WEB_API_Training.Controllers
 
         //READ
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll()
         {
             try

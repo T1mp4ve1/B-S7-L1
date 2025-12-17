@@ -145,3 +145,9 @@ C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\obj\Debug\net8.0\refi
 C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\obj\Debug\net8.0\WEB API Training.pdb
 C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\obj\Debug\net8.0\WEB API Training.genruntimeconfig.cache
 C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\obj\Debug\net8.0\ref\WEB API Training.dll
+C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Pavel\Desktop\Corsi\Back\B-S7-L1\WEB API Training\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
